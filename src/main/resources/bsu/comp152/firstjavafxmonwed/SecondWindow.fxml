@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.firstjavafxmonwed.SecondWindow">
+   <children>
+      <BorderPane minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <Button mnemonicParsing="false" onAction="#handleButtonClick" text="press me" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <Label fx:id="ourMessage" text="Hello" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

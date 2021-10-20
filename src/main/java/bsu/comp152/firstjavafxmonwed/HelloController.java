@@ -2,6 +2,8 @@ package bsu.comp152.firstjavafxmonwed;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Paint;
+import javafx.scene.text.Font;
 
 public class HelloController {
     @FXML
@@ -9,6 +11,10 @@ public class HelloController {
 
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+        var newFont = Font.font(24);
+        welcomeText.setFont(newFont);
+        var textColor = Paint.valueOf("Green");
+        welcomeText.setTextFill(textColor);
+        welcomeText.setText("Welcome to JavaFX Comp 152");
     }
 }
